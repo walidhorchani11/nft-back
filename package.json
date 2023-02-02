@@ -1,0 +1,14 @@
+{
+  "name": "nft-back-walid",
+  "version": "1.0.0",
+  "description": "back end for nft",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "horchani walid",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.9.0"
+  }
+}

@@ -1,9 +1,14 @@
 const mongoose = require("mongoose");
 const express = require("express");
+
+const userRoutes = require("./routes/userRoutes");
 const User = require("./models/userModel");
-console.log("🚀 ~ file: server.js:4 ~ User", User);
 
 const app = express();
+
+app.use(express.json());
+
+app.use(userRoutes);
 
 app.use("/", async (req, res, next) => {
   try {
